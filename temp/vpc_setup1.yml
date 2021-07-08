@@ -5,7 +5,7 @@
   gather_facts: false
   tasks:
     - name: importing the variables
-      include_vars: temp/vpc_setup1.yml
+      include_vars: vars/vpc_setup
     - name: creating the vpc
       ec2_vpc_net:
         name: "{{vpc_name}}"
